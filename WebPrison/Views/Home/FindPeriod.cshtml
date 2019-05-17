@@ -1,0 +1,13 @@
+﻿@model List<string[]>
+
+@foreach (var res in Model)
+{
+    <tr>
+        <th scope="col">@res[0]</th>
+        <th scope="col">@res[1]</th>
+        <th scope="col">@res[2]</th>
+        <th scope="col">@res[3]</th>
+        <th scope="col">@res[4]</th>
+        <th scope="col">@res[5]</th>
+    </tr>
+}

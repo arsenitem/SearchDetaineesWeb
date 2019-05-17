@@ -1,0 +1,37 @@
+﻿@model List<string[]>
+@{
+    ViewBag.Title = "Задержания";
+    
+}
+<div class="row justify-content-end">
+    <div class="col-4 align-self-end text-center"  style="margin-bottom:30px;" id="days15">
+        @Ajax.ActionLink("Cписок задержанных на 15 суток","Days15","Home",new AjaxOptions { UpdateTargetId="target"}, new { @onclick="ClearTable()", @id="days15"})
+        Добавить
+    </div>
+</div>
+<div class="row">
+    <table class="table table-hover">
+        <thead>
+            <tr id="det-table">
+                <th scope="col">Задержанный</th>
+                <th scope="col">Дата задержания</th>
+                <th scope="col">Мотивы</th>
+                <th scope="col">Дата прекращения ареста</th>
+               
+            </tr>
+        </thead>
+        <tbody id="target">
+            @foreach (var res in Model)
+    {
+        <tr >
+            <th scope="col">@res[0]</th>
+            <th scope="col">@res[0]</th>
+            <th scope="col">@res[0]</th>
+            <th scope="col">@res[0]</th>
+
+        </tr>
+}
+        </tbody>
+    </table>
+</div>
+

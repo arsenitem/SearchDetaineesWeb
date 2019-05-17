@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "Вход";
+}
+
+<div class="row">
+    <div class="col justify-content-center">
+        @if (ViewBag.Error == true)
+        {
+            <div class="alert alert-danger">@ViewBag.Message</div>
+        }
+       
+        <form class="needs-validation" novalidate  method="post" action="/Home/Login">
+
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom01">Логин</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Логин" value="" required name="login">
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom02">Пароль</label>
+                <input type="password" class="form-control" id="validationCustom02" placeholder="Пароль" value="" required name="pass">
+
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <button type="submit" class="btn btn-outline-success offset">Войти</button>
+            </div>
+
+         </form>
+            </div>
+    </div>
+

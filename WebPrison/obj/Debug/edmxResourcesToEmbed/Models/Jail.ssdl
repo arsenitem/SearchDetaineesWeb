@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище JailDBModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CompelLocations">
+    <Key>
+      <PropertyRef Name="IdLocation" />
+    </Key>
+    <Property Name="IdLocation" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Courts">
+    <Key>
+      <PropertyRef Name="IdCourt" />
+    </Key>
+    <Property Name="IdCourt" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Detainees">
+    <Key>
+      <PropertyRef Name="IdDetainee" />
+    </Key>
+    <Property Name="IdDetainee" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PassSeries" Type="int" />
+    <Property Name="PassNumber" Type="int" Nullable="false" />
+    <Property Name="SurName" Type="nvarchar" MaxLength="255" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="255" />
+    <Property Name="MiddleName" Type="nvarchar" MaxLength="255" />
+    <Property Name="BirthDay" Type="nvarchar" MaxLength="50" />
+    <Property Name="BirthLocation" Type="nvarchar" MaxLength="255" />
+    <Property Name="CurrLocation" Type="nvarchar" MaxLength="255" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="255" />
+    <Property Name="Work" Type="nvarchar" MaxLength="255" />
+    <Property Name="WorkPhone" Type="nvarchar" MaxLength="255" />
+    <Property Name="School" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Detentions">
+    <Key>
+      <PropertyRef Name="IdDetention" />
+    </Key>
+    <Property Name="IdDetention" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdDetainee" Type="int" />
+    <Property Name="Detaintime" Type="datetime" />
+    <Property Name="Reason" Type="nvarchar" MaxLength="255" />
+    <Property Name="IdReport" Type="int" />
+    <Property Name="ReleaseTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Hearings">
+    <Key>
+      <PropertyRef Name="IdHearing" />
+    </Key>
+    <Property Name="IdHearing" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Office" Type="nvarchar" MaxLength="255" />
+    <Property Name="Decision" Type="nvarchar" MaxLength="255" />
+    <Property Name="Punishment" Type="nvarchar" MaxLength="255" />
+    <Property Name="IdJudge" Type="int" />
+    <Property Name="DateTime" Type="datetime" />
+    <Property Name="IdReport" Type="int" />
+  </EntityType>
+  <EntityType Name="Judges">
+    <Key>
+      <PropertyRef Name="IdJudge" />
+    </Key>
+    <Property Name="IdJudge" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SurName" Type="nvarchar" MaxLength="255" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="255" />
+    <Property Name="MiddleName" Type="nvarchar" MaxLength="255" />
+    <Property Name="IdCourt" Type="int" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "JailDB.dbo.Notice" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="Notice">
+    <Key>
+      <PropertyRef Name="IdNotice" />
+    </Key>
+    <Property Name="IdNotice" Type="int" Nullable="false" />
+    <Property Name="SurName" Type="nvarchar" MaxLength="255" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="255" />
+    <Property Name="MiddleName" Type="nvarchar" MaxLength="255" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="DateTime" Type="datetime" />
+    <Property Name="IdDetention" Type="int" />
+  </EntityType>
+  <EntityType Name="Officers">
+    <Key>
+      <PropertyRef Name="IdOfficer" />
+    </Key>
+    <Property Name="IdOfficer" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SurName" Type="nvarchar" MaxLength="255" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="255" />
+    <Property Name="MiddleName" Type="nvarchar" MaxLength="255" />
+    <Property Name="Post" Type="nvarchar" MaxLength="255" />
+    <Property Name="Rank" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Reports">
+    <Key>
+      <PropertyRef Name="IdReport" />
+    </Key>
+    <Property Name="IdReport" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Section" Type="nvarchar" MaxLength="255" />
+    <Property Name="DateTime" Type="datetime" />
+    <Property Name="IdOfficer" Type="int" />
+    <Property Name="Notification" Type="bit" Nullable="false" />
+    <Property Name="IdLocation" Type="int" />
+  </EntityType>
+  <EntityType Name="Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Хранилище JailDBModelContainer">
+    <EntitySet Name="CompelLocations" EntityType="Self.CompelLocations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Courts" EntityType="Self.Courts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Detainees" EntityType="Self.Detainees" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Detentions" EntityType="Self.Detentions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Hearings" EntityType="Self.Hearings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Judges" EntityType="Self.Judges" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Officers" EntityType="Self.Officers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Reports" EntityType="Self.Reports" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Table" EntityType="Self.Table" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Notice" EntityType="Self.Notice" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Notice].[IdNotice] AS [IdNotice], 
+    [Notice].[SurName] AS [SurName], 
+    [Notice].[FirstName] AS [FirstName], 
+    [Notice].[MiddleName] AS [MiddleName], 
+    [Notice].[PhoneNumber] AS [PhoneNumber], 
+    [Notice].[Address] AS [Address], 
+    [Notice].[DateTime] AS [DateTime], 
+    [Notice].[IdDetention] AS [IdDetention]
+    FROM [dbo].[Notice] AS [Notice]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

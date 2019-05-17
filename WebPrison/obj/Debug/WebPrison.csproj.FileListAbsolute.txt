@@ -1,0 +1,155 @@
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\ApplicationInsights.config
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\csc.exe
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\csc.exe.config
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\csc.rsp
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\csi.exe
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\csi.rsp
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\System.AppContext.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\System.Collections.Immutable.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\System.Diagnostics.StackTrace.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\System.IO.FileSystem.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\System.IO.FileSystem.Primitives.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\vbc.exe
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\vbc.exe.config
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\vbc.rsp
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\VBCSCompiler.exe
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\roslyn\VBCSCompiler.exe.config
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\WebPrison.dll.config
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\WebPrison.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\WebPrison.pdb
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\Antlr3.Runtime.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\Microsoft.AI.Web.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\Microsoft.AI.WindowsServer.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\Microsoft.ApplicationInsights.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\Microsoft.Web.Infrastructure.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\Newtonsoft.Json.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\System.Web.Helpers.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\System.Web.Mvc.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\System.Web.Optimization.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\System.Web.Razor.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\System.Web.WebPages.Deployment.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\System.Web.WebPages.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\System.Web.WebPages.Razor.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\WebGrease.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\System.Web.Helpers.xml
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\System.Web.Mvc.xml
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\System.Web.Optimization.xml
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\System.Web.Razor.xml
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\System.Web.WebPages.xml
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\System.Web.WebPages.Deployment.xml
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\System.Web.WebPages.Razor.xml
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\Antlr3.Runtime.pdb
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\Newtonsoft.Json.xml
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\Microsoft.ApplicationInsights.xml
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\Microsoft.AI.WindowsServer.xml
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\Microsoft.AI.Web.xml
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\ru\System.Web.Helpers.resources.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\ru\System.Web.Mvc.resources.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\ru\System.Web.Optimization.resources.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\ru\System.Web.Razor.resources.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\ru\System.Web.WebPages.resources.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\ru\System.Web.WebPages.Deployment.resources.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\bin\ru\System.Web.WebPages.Razor.resources.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\obj\Debug\WebPrison.csprojResolveAssemblyReference.cache
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\obj\Debug\WebPrison.dll
+c:\users\atemnik\documents\visual studio 2017\Projects\WebPrison\WebPrison\obj\Debug\WebPrison.pdb
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\ApplicationInsights.config
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\csc.exe
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\csc.exe.config
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\csc.rsp
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\csi.exe
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\csi.rsp
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\System.AppContext.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\vbc.exe
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\vbc.exe.config
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\vbc.rsp
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\VBCSCompiler.exe
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\WebPrison.dll.config
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\WebPrison.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\WebPrison.pdb
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\Antlr3.Runtime.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\EntityFramework.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\EntityFramework.SqlServer.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\Microsoft.AI.Web.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\Microsoft.ApplicationInsights.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\Newtonsoft.Json.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\System.Web.Helpers.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\System.Web.Mvc.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\System.Web.Optimization.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\System.Web.Razor.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\System.Web.WebPages.Deployment.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\System.Web.WebPages.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\System.Web.WebPages.Razor.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\WebGrease.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\EntityFramework.xml
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\EntityFramework.SqlServer.xml
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\System.Web.Helpers.xml
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\System.Web.Mvc.xml
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\System.Web.Optimization.xml
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\System.Web.Razor.xml
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\System.Web.WebPages.xml
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\System.Web.WebPages.Deployment.xml
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\System.Web.WebPages.Razor.xml
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\Antlr3.Runtime.pdb
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\Newtonsoft.Json.xml
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\Microsoft.ApplicationInsights.xml
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\Microsoft.AI.Web.xml
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\ru\EntityFramework.resources.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\ru\System.Web.Helpers.resources.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\ru\System.Web.Mvc.resources.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\ru\System.Web.Optimization.resources.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\ru\System.Web.Razor.resources.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\ru\System.Web.WebPages.resources.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\ru\System.Web.WebPages.Deployment.resources.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\ru\System.Web.WebPages.Razor.resources.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\obj\Debug\WebPrison.csprojResolveAssemblyReference.cache
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\obj\Debug\WebPrison.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\obj\Debug\WebPrison.dll
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\obj\Debug\WebPrison.pdb
+C:\Users\pc\Desktop\SearchDetainees-master\WebPrison\bin\ru\EntityFramework.SqlServer.resources.dll

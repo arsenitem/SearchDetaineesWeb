@@ -1,0 +1,66 @@
+﻿@model List<WebPrison.Models.Detainees>
+@{
+    ViewBag.Title = "Поиск задержанных";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        @using (Ajax.BeginForm("FindGuest", new AjaxOptions { UpdateTargetId = "target" }))
+    {
+        <form class="needs-validation" novalidate method="post">
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom01">Имя</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Имя" value="" required name="name">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom02">Фамилия</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="Фамилия" value="" required name="l_name">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="inputDate">Дата рождения</label>
+                <input type="date" class="form-control" id="validationCustom02" required name="bday">
+            </div>
+            <div class="col-md-4 mb-3">
+                <button type="submit" class="btn btn-outline-success offset">Найти</button>
+            </div>
+        </form>
+}
+
+    </div>
+
+    <div class="col-md-4">
+        @using (Ajax.BeginForm("FindSchool", new AjaxOptions { UpdateTargetId = "target" }))
+        {
+        <form class="needs-validation" novalidate>
+            <div class="col-md-4 mb-3">
+                <label for="validationCustom02" id="school">Учебное заведение</label>
+                <input type="text" class="form-control" id="school" placeholder="Учебное заведение" value="" required name="school">
+            </div>
+            <div class="col-md-4 mb-3">
+                <button type="submit" class="btn btn-outline-success offset">Найти</button>
+            </div>
+        </form>
+        }
+    </div>
+</div>
+<div class="row">
+    <table class="table table-hover" >
+        <thead>
+            <tr id="det-table">
+                <th scope="col">Фамилия</th>
+                <th scope="col">Имя</th>
+                <th scope="col">Отчество</th>
+                <th scope="col">Дата рождения</th>
+                <th scope="col">Серия паспорта</th>
+                <th scope="col">Номер паспорта</th>
+                <th scope="col">Телефон</th>
+                <th scope="col">Место учебы</th>
+                <th scope="col">Место работы</th>
+            </tr>
+        </thead>
+        <tbody id="target">     
+        </tbody>
+    </table>
+   
+</div>
+       

@@ -1,0 +1,41 @@
+﻿@model IEnumerable<WebPrison.Models.Detainees>
+@{
+    ViewBag.Title = "Задержанные";
+    
+}
+<div class="row" style="margin-top:20px" id="target">
+    <table class="table table-hover" id="target_del">
+        <thead>
+            <tr id="det-table">
+                <th scope="col">Фамилия</th>
+                <th scope="col">Имя</th>
+                <th scope="col">Отчество</th>
+                <th scope="col">Дата рождения</th>
+                <th scope="col">Серия паспорта</th>
+                <th scope="col">Номер паспорта</th>
+                <th scope="col">Телефон</th>
+                <th scope="col">Место учебы</th>
+                <th scope="col">Место работы</th>
+            </tr>
+        </thead>
+        <tbody >
+            @foreach (var res in Model)
+            {
+            <tr>
+                <th scope="col">@res.SurName</th>
+                <th scope="col">@res.FirstName</th>
+                <th scope="col">@res.MiddleName</th>
+                <th scope="col">@res.BirthDay</th>
+                <th scope="col">@res.PassSeries</th>
+                <th scope="col">@res.PassNumber</th>
+                <th scope="col">@res.PhoneNumber</th>
+                <th scope="col">@res.School</th>
+                <th scope="col">@res.Work</th>
+
+            </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+

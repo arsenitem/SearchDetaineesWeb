@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="JailDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CompelLocations">
+    <Key>
+      <PropertyRef Name="IdLocation" />
+    </Key>
+    <Property Name="IdLocation" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Courts">
+    <Key>
+      <PropertyRef Name="IdCourt" />
+    </Key>
+    <Property Name="IdCourt" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Detainees">
+    <Key>
+      <PropertyRef Name="IdDetainee" />
+    </Key>
+    <Property Name="IdDetainee" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PassSeries" Type="Int32" />
+    <Property Name="PassNumber" Type="Int32" Nullable="false" />
+    <Property Name="SurName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="FirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="MiddleName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="BirthDay" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BirthLocation" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CurrLocation" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Work" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="WorkPhone" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="School" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Detentions">
+    <Key>
+      <PropertyRef Name="IdDetention" />
+    </Key>
+    <Property Name="IdDetention" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdDetainee" Type="Int32" />
+    <Property Name="Detaintime" Type="DateTime" Precision="3" />
+    <Property Name="Reason" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="IdReport" Type="Int32" />
+    <Property Name="ReleaseTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Hearings">
+    <Key>
+      <PropertyRef Name="IdHearing" />
+    </Key>
+    <Property Name="IdHearing" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Office" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Decision" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Punishment" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="IdJudge" Type="Int32" />
+    <Property Name="DateTime" Type="DateTime" Precision="3" />
+    <Property Name="IdReport" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Judges">
+    <Key>
+      <PropertyRef Name="IdJudge" />
+    </Key>
+    <Property Name="IdJudge" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SurName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="FirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="MiddleName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="IdCourt" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Officers">
+    <Key>
+      <PropertyRef Name="IdOfficer" />
+    </Key>
+    <Property Name="IdOfficer" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SurName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="FirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="MiddleName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Post" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Rank" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Reports">
+    <Key>
+      <PropertyRef Name="IdReport" />
+    </Key>
+    <Property Name="IdReport" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Section" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DateTime" Type="DateTime" Precision="3" />
+    <Property Name="IdOfficer" Type="Int32" />
+    <Property Name="Notification" Type="Boolean" Nullable="false" />
+    <Property Name="IdLocation" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Table">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Notice">
+    <Key>
+      <PropertyRef Name="IdNotice" />
+    </Key>
+    <Property Name="IdNotice" Type="Int32" Nullable="false" />
+    <Property Name="SurName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="FirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="MiddleName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="DateTime" Type="DateTime" Precision="3" />
+    <Property Name="IdDetention" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="JailDB" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CompelLocations" EntityType="Self.CompelLocations" />
+    <EntitySet Name="Courts" EntityType="Self.Courts" />
+    <EntitySet Name="Detainees" EntityType="Self.Detainees" />
+    <EntitySet Name="Detentions" EntityType="Self.Detentions" />
+    <EntitySet Name="Hearings" EntityType="Self.Hearings" />
+    <EntitySet Name="Judges" EntityType="Self.Judges" />
+    <EntitySet Name="Officers" EntityType="Self.Officers" />
+    <EntitySet Name="Reports" EntityType="Self.Reports" />
+    <EntitySet Name="Table" EntityType="Self.Table" />
+    <EntitySet Name="Notice" EntityType="Self.Notice" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,27 @@
+﻿@model List<string[]>
+<table class="table table-hover" >
+    <thead>
+        @Html.ActionLink("Назад","Detainees","Home",new { @style="margin-bottom:10px;"})
+        <tr id="det-table">
+            <th scope="col">№</th>
+            <th scope="col">Часть/Статья КоАп</th>
+            <th scope="col">Дата составления</th>
+            <th scope="col">Должностное лицо</th>
+            <th scope="col">Уведомление о задержании</th>
+            <th scope="col">Место доставления</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var res in Model)
+        {
+        <tr>
+            <th scope="col">@res[0]</th>
+            <th scope="col">@res[1]</th>
+            <th scope="col">@res[2]</th>
+            <th scope="col">@res[3]</th>
+            <th scope="col">@res[4]</th>
+            <th scope="col">@res[5]</th>
+        </tr>
+        }
+    </tbody>
+</table>

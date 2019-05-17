@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище JailDBModelContainer" CdmEntityContainer="JailDB">
+    <EntitySetMapping Name="CompelLocations">
+      <EntityTypeMapping TypeName="JailDBModel.CompelLocations">
+        <MappingFragment StoreEntitySet="CompelLocations">
+          <ScalarProperty Name="IdLocation" ColumnName="IdLocation" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Courts">
+      <EntityTypeMapping TypeName="JailDBModel.Courts">
+        <MappingFragment StoreEntitySet="Courts">
+          <ScalarProperty Name="IdCourt" ColumnName="IdCourt" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Detainees">
+      <EntityTypeMapping TypeName="JailDBModel.Detainees">
+        <MappingFragment StoreEntitySet="Detainees">
+          <ScalarProperty Name="IdDetainee" ColumnName="IdDetainee" />
+          <ScalarProperty Name="PassSeries" ColumnName="PassSeries" />
+          <ScalarProperty Name="PassNumber" ColumnName="PassNumber" />
+          <ScalarProperty Name="SurName" ColumnName="SurName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="BirthDay" ColumnName="BirthDay" />
+          <ScalarProperty Name="BirthLocation" ColumnName="BirthLocation" />
+          <ScalarProperty Name="CurrLocation" ColumnName="CurrLocation" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Work" ColumnName="Work" />
+          <ScalarProperty Name="WorkPhone" ColumnName="WorkPhone" />
+          <ScalarProperty Name="School" ColumnName="School" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Detentions">
+      <EntityTypeMapping TypeName="JailDBModel.Detentions">
+        <MappingFragment StoreEntitySet="Detentions">
+          <ScalarProperty Name="IdDetention" ColumnName="IdDetention" />
+          <ScalarProperty Name="IdDetainee" ColumnName="IdDetainee" />
+          <ScalarProperty Name="Detaintime" ColumnName="Detaintime" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="IdReport" ColumnName="IdReport" />
+          <ScalarProperty Name="ReleaseTime" ColumnName="ReleaseTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hearings">
+      <EntityTypeMapping TypeName="JailDBModel.Hearings">
+        <MappingFragment StoreEntitySet="Hearings">
+          <ScalarProperty Name="IdHearing" ColumnName="IdHearing" />
+          <ScalarProperty Name="Office" ColumnName="Office" />
+          <ScalarProperty Name="Decision" ColumnName="Decision" />
+          <ScalarProperty Name="Punishment" ColumnName="Punishment" />
+          <ScalarProperty Name="IdJudge" ColumnName="IdJudge" />
+          <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+          <ScalarProperty Name="IdReport" ColumnName="IdReport" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Judges">
+      <EntityTypeMapping TypeName="JailDBModel.Judges">
+        <MappingFragment StoreEntitySet="Judges">
+          <ScalarProperty Name="IdJudge" ColumnName="IdJudge" />
+          <ScalarProperty Name="SurName" ColumnName="SurName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="IdCourt" ColumnName="IdCourt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Officers">
+      <EntityTypeMapping TypeName="JailDBModel.Officers">
+        <MappingFragment StoreEntitySet="Officers">
+          <ScalarProperty Name="IdOfficer" ColumnName="IdOfficer" />
+          <ScalarProperty Name="SurName" ColumnName="SurName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="Post" ColumnName="Post" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reports">
+      <EntityTypeMapping TypeName="JailDBModel.Reports">
+        <MappingFragment StoreEntitySet="Reports">
+          <ScalarProperty Name="IdReport" ColumnName="IdReport" />
+          <ScalarProperty Name="Section" ColumnName="Section" />
+          <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+          <ScalarProperty Name="IdOfficer" ColumnName="IdOfficer" />
+          <ScalarProperty Name="Notification" ColumnName="Notification" />
+          <ScalarProperty Name="IdLocation" ColumnName="IdLocation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Table">
+      <EntityTypeMapping TypeName="JailDBModel.Table">
+        <MappingFragment StoreEntitySet="Table">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Notice">
+      <EntityTypeMapping TypeName="JailDBModel.Notice">
+        <MappingFragment StoreEntitySet="Notice">
+          <ScalarProperty Name="IdNotice" ColumnName="IdNotice" />
+          <ScalarProperty Name="SurName" ColumnName="SurName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+          <ScalarProperty Name="IdDetention" ColumnName="IdDetention" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

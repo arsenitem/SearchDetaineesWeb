@@ -1,0 +1,18 @@
+﻿@model IEnumerable<WebPrison.Models.Detainees>
+
+@foreach (var res in Model)
+{
+    <tr>
+        <th scope="col">@res.SurName</th>
+        <th scope="col">@res.FirstName</th>
+        <th scope="col">@res.MiddleName</th>
+        <th scope="col">@res.BirthDay</th>
+        <th scope="col">@res.PassSeries</th>
+        <th scope="col">@res.PassNumber</th>
+        <th scope="col">@res.PhoneNumber</th>
+        <th scope="col">@res.School</th>
+        <th scope="col">@res.Work</th>
+    </tr>
+}
+
+

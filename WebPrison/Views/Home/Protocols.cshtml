@@ -1,0 +1,53 @@
+﻿@model List<string[]>
+@{
+    ViewBag.Title = "Протоколы";
+    
+}
+<div class="row ">
+    <div class="col justify-content-center">
+        @using (Ajax.BeginForm("FindPeriod", new AjaxOptions { UpdateTargetId = "target1" }))
+    {
+        <form class="needs-validation" novalidate method="post" action="/Home/Protocols">
+            <div class="col-md-10" id="protoc">
+                <label for="inputDate">За период с </label>
+                <input type="date" class="form-control" id="validationCustom02" required style="display:inline;width:160px" name="begin_date">
+
+                <label for="inputDate">по</label>
+                <input type="date" class="form-control" id="validationCustom02" required style="display:inline;width:160px" name="end_date">
+                <button type="submit" class="btn btn-outline-success offset" style="display:inline;margin-left:10px;margin-bottom:4px;" onclick="ClearTable()">Найти</button>
+            </div>
+        </form>
+}
+
+    </div>
+</div>
+
+<div class="row">
+    <table class="table table-hover">
+        <thead>
+            <tr id="det-table">
+                <th scope="col">№</th>
+                <th scope="col">Часть/Статья КоАп</th>
+                <th scope="col">Дата составления</th>
+                <th scope="col">Должностное лицо</th>
+                <th scope="col">Уведомление о задержании</th>
+                <th scope="col">Место доставления</th>
+            </tr>
+        </thead>
+        <tbody id="target1">
+            @foreach (var res in Model)
+                    {
+                <tr>
+                    <th scope="col">@res[0]</th>
+                    <th scope="col">@res[1]</th>
+                    <th scope="col">@res[2]</th>
+                    <th scope="col">@res[3]</th>
+                    <th scope="col">@res[4]</th>
+                    <th scope="col">@res[5]</th>
+                </tr>
+        }
+
+        </tbody>
+    </table>
+</div>
+

@@ -1,0 +1,65 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 20px;
+   
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+#navig{
+    margin-bottom:30px;
+}
+#school{
+    width:190px;
+}
+#det-table {
+   padding-top:25px;
+    border: solid 2px #28a745;
+}
+table {
+    font: 400 13.3333px Arial;
+    color: #495057;
+}
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #495057;
+}
+.nav-link{
+    cursor:pointer;
+}
+/*.nav-item:hover{
+    background-color:darkgray;
+}*/
+.active:hover {
+    background-color: #e8e8e8;
+}
+#protoc {
+    float:right;
+    display:inline-block;
+    margin-bottom:30px;
+}
+#days15 {
+    cursor: pointer;
+}
+#days15 a:hover {
+    color: #28a745;
+}

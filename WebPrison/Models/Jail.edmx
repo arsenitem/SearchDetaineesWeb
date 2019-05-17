@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище JailDBModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CompelLocations">
+          <Key>
+            <PropertyRef Name="IdLocation" />
+          </Key>
+          <Property Name="IdLocation" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="255" />
+          <Property Name="Address" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Courts">
+          <Key>
+            <PropertyRef Name="IdCourt" />
+          </Key>
+          <Property Name="IdCourt" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="255" />
+          <Property Name="Address" Type="nvarchar" MaxLength="255" />
+          <Property Name="PhoneNumber" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Detainees">
+          <Key>
+            <PropertyRef Name="IdDetainee" />
+          </Key>
+          <Property Name="IdDetainee" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PassSeries" Type="int" />
+          <Property Name="PassNumber" Type="int" Nullable="false" />
+          <Property Name="SurName" Type="nvarchar" MaxLength="255" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="255" />
+          <Property Name="MiddleName" Type="nvarchar" MaxLength="255" />
+          <Property Name="BirthDay" Type="nvarchar" MaxLength="50" />
+          <Property Name="BirthLocation" Type="nvarchar" MaxLength="255" />
+          <Property Name="CurrLocation" Type="nvarchar" MaxLength="255" />
+          <Property Name="PhoneNumber" Type="nvarchar" MaxLength="255" />
+          <Property Name="Work" Type="nvarchar" MaxLength="255" />
+          <Property Name="WorkPhone" Type="nvarchar" MaxLength="255" />
+          <Property Name="School" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Detentions">
+          <Key>
+            <PropertyRef Name="IdDetention" />
+          </Key>
+          <Property Name="IdDetention" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IdDetainee" Type="int" />
+          <Property Name="Detaintime" Type="datetime" />
+          <Property Name="Reason" Type="nvarchar" MaxLength="255" />
+          <Property Name="IdReport" Type="int" />
+          <Property Name="ReleaseTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Hearings">
+          <Key>
+            <PropertyRef Name="IdHearing" />
+          </Key>
+          <Property Name="IdHearing" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Office" Type="nvarchar" MaxLength="255" />
+          <Property Name="Decision" Type="nvarchar" MaxLength="255" />
+          <Property Name="Punishment" Type="nvarchar" MaxLength="255" />
+          <Property Name="IdJudge" Type="int" />
+          <Property Name="DateTime" Type="datetime" />
+          <Property Name="IdReport" Type="int" />
+        </EntityType>
+        <EntityType Name="Judges">
+          <Key>
+            <PropertyRef Name="IdJudge" />
+          </Key>
+          <Property Name="IdJudge" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SurName" Type="nvarchar" MaxLength="255" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="255" />
+          <Property Name="MiddleName" Type="nvarchar" MaxLength="255" />
+          <Property Name="IdCourt" Type="int" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "JailDB.dbo.Notice" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+        <EntityType Name="Notice">
+          <Key>
+            <PropertyRef Name="IdNotice" />
+          </Key>
+          <Property Name="IdNotice" Type="int" Nullable="false" />
+          <Property Name="SurName" Type="nvarchar" MaxLength="255" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="255" />
+          <Property Name="MiddleName" Type="nvarchar" MaxLength="255" />
+          <Property Name="PhoneNumber" Type="nvarchar" MaxLength="255" />
+          <Property Name="Address" Type="nvarchar" MaxLength="255" />
+          <Property Name="DateTime" Type="datetime" />
+          <Property Name="IdDetention" Type="int" />
+        </EntityType>
+        <EntityType Name="Officers">
+          <Key>
+            <PropertyRef Name="IdOfficer" />
+          </Key>
+          <Property Name="IdOfficer" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SurName" Type="nvarchar" MaxLength="255" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="255" />
+          <Property Name="MiddleName" Type="nvarchar" MaxLength="255" />
+          <Property Name="Post" Type="nvarchar" MaxLength="255" />
+          <Property Name="Rank" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Reports">
+          <Key>
+            <PropertyRef Name="IdReport" />
+          </Key>
+          <Property Name="IdReport" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Section" Type="nvarchar" MaxLength="255" />
+          <Property Name="DateTime" Type="datetime" />
+          <Property Name="IdOfficer" Type="int" />
+          <Property Name="Notification" Type="bit" Nullable="false" />
+          <Property Name="IdLocation" Type="int" />
+        </EntityType>
+        <EntityType Name="Table">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Хранилище JailDBModelContainer">
+          <EntitySet Name="CompelLocations" EntityType="Self.CompelLocations" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Courts" EntityType="Self.Courts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Detainees" EntityType="Self.Detainees" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Detentions" EntityType="Self.Detentions" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Hearings" EntityType="Self.Hearings" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Judges" EntityType="Self.Judges" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Officers" EntityType="Self.Officers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Reports" EntityType="Self.Reports" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Table" EntityType="Self.Table" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Notice" EntityType="Self.Notice" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Notice].[IdNotice] AS [IdNotice], 
+    [Notice].[SurName] AS [SurName], 
+    [Notice].[FirstName] AS [FirstName], 
+    [Notice].[MiddleName] AS [MiddleName], 
+    [Notice].[PhoneNumber] AS [PhoneNumber], 
+    [Notice].[Address] AS [Address], 
+    [Notice].[DateTime] AS [DateTime], 
+    [Notice].[IdDetention] AS [IdDetention]
+    FROM [dbo].[Notice] AS [Notice]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="JailDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CompelLocations">
+          <Key>
+            <PropertyRef Name="IdLocation" />
+          </Key>
+          <Property Name="IdLocation" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Courts">
+          <Key>
+            <PropertyRef Name="IdCourt" />
+          </Key>
+          <Property Name="IdCourt" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Detainees">
+          <Key>
+            <PropertyRef Name="IdDetainee" />
+          </Key>
+          <Property Name="IdDetainee" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PassSeries" Type="Int32" />
+          <Property Name="PassNumber" Type="Int32" Nullable="false" />
+          <Property Name="SurName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="FirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="MiddleName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="BirthDay" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BirthLocation" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="CurrLocation" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Work" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="WorkPhone" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="School" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Detentions">
+          <Key>
+            <PropertyRef Name="IdDetention" />
+          </Key>
+          <Property Name="IdDetention" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IdDetainee" Type="Int32" />
+          <Property Name="Detaintime" Type="DateTime" Precision="3" />
+          <Property Name="Reason" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="IdReport" Type="Int32" />
+          <Property Name="ReleaseTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Hearings">
+          <Key>
+            <PropertyRef Name="IdHearing" />
+          </Key>
+          <Property Name="IdHearing" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Office" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Decision" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Punishment" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="IdJudge" Type="Int32" />
+          <Property Name="DateTime" Type="DateTime" Precision="3" />
+          <Property Name="IdReport" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Judges">
+          <Key>
+            <PropertyRef Name="IdJudge" />
+          </Key>
+          <Property Name="IdJudge" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SurName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="FirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="MiddleName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="IdCourt" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Officers">
+          <Key>
+            <PropertyRef Name="IdOfficer" />
+          </Key>
+          <Property Name="IdOfficer" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SurName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="FirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="MiddleName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Post" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Rank" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Reports">
+          <Key>
+            <PropertyRef Name="IdReport" />
+          </Key>
+          <Property Name="IdReport" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Section" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DateTime" Type="DateTime" Precision="3" />
+          <Property Name="IdOfficer" Type="Int32" />
+          <Property Name="Notification" Type="Boolean" Nullable="false" />
+          <Property Name="IdLocation" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Table">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Notice">
+          <Key>
+            <PropertyRef Name="IdNotice" />
+          </Key>
+          <Property Name="IdNotice" Type="Int32" Nullable="false" />
+          <Property Name="SurName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="FirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="MiddleName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="DateTime" Type="DateTime" Precision="3" />
+          <Property Name="IdDetention" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="JailDB" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CompelLocations" EntityType="Self.CompelLocations" />
+          <EntitySet Name="Courts" EntityType="Self.Courts" />
+          <EntitySet Name="Detainees" EntityType="Self.Detainees" />
+          <EntitySet Name="Detentions" EntityType="Self.Detentions" />
+          <EntitySet Name="Hearings" EntityType="Self.Hearings" />
+          <EntitySet Name="Judges" EntityType="Self.Judges" />
+          <EntitySet Name="Officers" EntityType="Self.Officers" />
+          <EntitySet Name="Reports" EntityType="Self.Reports" />
+          <EntitySet Name="Table" EntityType="Self.Table" />
+          <EntitySet Name="Notice" EntityType="Self.Notice" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище JailDBModelContainer" CdmEntityContainer="JailDB">
+          <EntitySetMapping Name="CompelLocations">
+            <EntityTypeMapping TypeName="JailDBModel.CompelLocations">
+              <MappingFragment StoreEntitySet="CompelLocations">
+                <ScalarProperty Name="IdLocation" ColumnName="IdLocation" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Courts">
+            <EntityTypeMapping TypeName="JailDBModel.Courts">
+              <MappingFragment StoreEntitySet="Courts">
+                <ScalarProperty Name="IdCourt" ColumnName="IdCourt" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Detainees">
+            <EntityTypeMapping TypeName="JailDBModel.Detainees">
+              <MappingFragment StoreEntitySet="Detainees">
+                <ScalarProperty Name="IdDetainee" ColumnName="IdDetainee" />
+                <ScalarProperty Name="PassSeries" ColumnName="PassSeries" />
+                <ScalarProperty Name="PassNumber" ColumnName="PassNumber" />
+                <ScalarProperty Name="SurName" ColumnName="SurName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="BirthDay" ColumnName="BirthDay" />
+                <ScalarProperty Name="BirthLocation" ColumnName="BirthLocation" />
+                <ScalarProperty Name="CurrLocation" ColumnName="CurrLocation" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="Work" ColumnName="Work" />
+                <ScalarProperty Name="WorkPhone" ColumnName="WorkPhone" />
+                <ScalarProperty Name="School" ColumnName="School" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Detentions">
+            <EntityTypeMapping TypeName="JailDBModel.Detentions">
+              <MappingFragment StoreEntitySet="Detentions">
+                <ScalarProperty Name="IdDetention" ColumnName="IdDetention" />
+                <ScalarProperty Name="IdDetainee" ColumnName="IdDetainee" />
+                <ScalarProperty Name="Detaintime" ColumnName="Detaintime" />
+                <ScalarProperty Name="Reason" ColumnName="Reason" />
+                <ScalarProperty Name="IdReport" ColumnName="IdReport" />
+                <ScalarProperty Name="ReleaseTime" ColumnName="ReleaseTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Hearings">
+            <EntityTypeMapping TypeName="JailDBModel.Hearings">
+              <MappingFragment StoreEntitySet="Hearings">
+                <ScalarProperty Name="IdHearing" ColumnName="IdHearing" />
+                <ScalarProperty Name="Office" ColumnName="Office" />
+                <ScalarProperty Name="Decision" ColumnName="Decision" />
+                <ScalarProperty Name="Punishment" ColumnName="Punishment" />
+                <ScalarProperty Name="IdJudge" ColumnName="IdJudge" />
+                <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+                <ScalarProperty Name="IdReport" ColumnName="IdReport" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Judges">
+            <EntityTypeMapping TypeName="JailDBModel.Judges">
+              <MappingFragment StoreEntitySet="Judges">
+                <ScalarProperty Name="IdJudge" ColumnName="IdJudge" />
+                <ScalarProperty Name="SurName" ColumnName="SurName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="IdCourt" ColumnName="IdCourt" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Officers">
+            <EntityTypeMapping TypeName="JailDBModel.Officers">
+              <MappingFragment StoreEntitySet="Officers">
+                <ScalarProperty Name="IdOfficer" ColumnName="IdOfficer" />
+                <ScalarProperty Name="SurName" ColumnName="SurName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="Post" ColumnName="Post" />
+                <ScalarProperty Name="Rank" ColumnName="Rank" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Reports">
+            <EntityTypeMapping TypeName="JailDBModel.Reports">
+              <MappingFragment StoreEntitySet="Reports">
+                <ScalarProperty Name="IdReport" ColumnName="IdReport" />
+                <ScalarProperty Name="Section" ColumnName="Section" />
+                <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+                <ScalarProperty Name="IdOfficer" ColumnName="IdOfficer" />
+                <ScalarProperty Name="Notification" ColumnName="Notification" />
+                <ScalarProperty Name="IdLocation" ColumnName="IdLocation" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Table">
+            <EntityTypeMapping TypeName="JailDBModel.Table">
+              <MappingFragment StoreEntitySet="Table">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Notice">
+            <EntityTypeMapping TypeName="JailDBModel.Notice">
+              <MappingFragment StoreEntitySet="Notice">
+                <ScalarProperty Name="IdNotice" ColumnName="IdNotice" />
+                <ScalarProperty Name="SurName" ColumnName="SurName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+                <ScalarProperty Name="IdDetention" ColumnName="IdDetention" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
